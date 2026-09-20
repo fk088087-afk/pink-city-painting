@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pink City Colour Paint | Jaipur</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+  color:#222;
+}
+
+.hero{
+  padding:55px 18px;
+  text-align:center;
+  color:white;
+  background:linear-gradient(135deg,#111,#555);
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+h1{
+  font-size:40px;
+  line-height:1.15;
+  margin:18px auto 12px;
+  max-width:750px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 23px;
+  margin:12px 5px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.whatsapp{
+  background:#18b85b;
+  color:white;
+}
+
+.quote-btn{
+  background:#ffb000;
+  color:#111;
+}
+
+.container{
+  max-width:950px;
+  margin:auto;
+  padding:35px 18px;
+}
+
+.title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:25px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;
+}
+
+.card{
+  background:white;
+  padding:23px;
+  border-radius:15px;
+  box-shadow:0 3px 15px #0001;
+}
+
+.card h3{
+  margin-top:0;
+}
+
+.card p{
+  color:#555;
+  line-height:1.5;
+}
+
+.form-box{
+  max-width:700px;
+  margin:auto;
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 3px 15px #0001;
+}
+
+label{
+  display:block;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+input,select,textarea{
+  width:100%;
+  padding:13px;
+  margin:7px 0 13px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:16px;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  background:#18b85b;
+  color:white;
+  border:0;
+  border-radius:9px;
+  font-size:17px;
+  font-weight:bold;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.step{
+  background:white;
+  padding:20px;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 3px 15px #0001;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:28px;
+  line-height:1.7;
+}
+
+.small{
+  text-align:center;
+  color:#666;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="logo">
+🎨 PINK CITY COLOUR PAINT
+</div>
+
+<h1>
+Diwali Se Pehle Ghar Ko Naya Look
+</h1>
+
+<p>
+Professional Home Painting Services in Jaipur
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/917790889067?text=Hello%20Pink%20City%20Colour%20Paint%2C%20mujhe%20home%20painting%20ka%20quotation%20chahiye."
+target="_blank">
+
+📲 WhatsApp Enquiry
+
+</a>
+
+<a class="btn quote-btn" href="#quote">
+FREE QUOTATION
+</a>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="container">
+
+<h2 class="title">
+Our Painting Services
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>🏠 Interior Painting</h3>
+<p>
+Rooms, walls aur ceilings ki professional painting.
+</p>
+</div>
+
+<div class="card">
+<h3>🏡 Exterior Painting</h3>
+<p>
+House, villa aur building exterior painting.
+</p>
+</div>
+
+<div class="card">
+<h3>🚪 Doors & Windows</h3>
+<p>
+Doors, windows aur selected surfaces ki painting.
+</p>
+</div>
+
+<div class="card">
+<h3>📐 Free Quotation</h3>
+<p>
+Apni requirement bhejiye aur quotation ke liye contact karein.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUOTATION FORM -->
+
+<section class="container" id="quote">
+
+<h2 class="title">
+Get Your Free Painting Quotation
+</h2>
+
+<div class="form-box">
+
+<form onsubmit="sendWhatsApp(event)">
+
+<label>Name</label>
+
+<input
+id="name"
+type="text"
+placeholder="Aapka naam"
+required
+>
+
+
+<label>Mobile Number</label>
+
+<input
+id="mobile"
+type="tel"
+placeholder="10 digit mobile number"
+required
+>
+
+
+<label>Jaipur Area</label>
+
+<input
+id="area"
+type="text"
+placeholder="e.g. Shastri Nagar"
+required
+>
+
+
+<label>Property Type</label>
+
+<select id="property">
+
+<option>House</option>
+<option>Flat</option>
+<option>Villa</option>
+<option>Shop</option>
+<option>Office</option>
+
+</select>
+
+
+<label>Painting Required</label>
+
+<select id="painting">
+
+<option>Interior</option>
+<option>Exterior</option>
+<option>Interior + Exterior</option>
+
+</select>
+
+
+<label>Approx. Rooms</label>
+
+<input
+id="rooms"
+type="number"
+placeholder="e.g. 3"
+>
+
+
+<label>Your Requirement</label>
+
+<textarea
+id="message"
+rows="4"
+placeholder="Apni requirement likhein">
+</textarea>
+
+
+<button type="submit">
+📲 Send Enquiry on WhatsApp
+</button>
+
+<p class="small">
+Final quotation site measurement aur work requirements ke basis par confirm ki jayegi.
+</p>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="container">
+
+<h2 class="title">
+How It Works
+</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1️⃣</h3>
+<b>Online Enquiry</b>
+<p>Details WhatsApp par bhejein.</p>
+</div>
+
+<div class="step">
+<h3>2️⃣</h3>
+<b>Site Visit</b>
+<p>Requirement aur measurement.</p>
+</div>
+
+<div class="step">
+<h3>3️⃣</h3>
+<b>Quotation</b>
+<p>Work details aur price.</p>
+</div>
+
+<div class="step">
+<h3>4️⃣</h3>
+<b>Painting</b>
+<p>Schedule karke kaam start.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<b>Pink City Colour Paint</b>
+
+<br>
+
+Jaipur & Nearby Areas
+
+<br>
+
+📲 WhatsApp: +91 77908 89067
+
+</footer>
+
+
+<script>
+
+function sendWhatsApp(event){
+
+event.preventDefault();
+
+let name =
+document.getElementById("name").value;
+
+let mobile =
+document.getElementById("mobile").value;
+
+let area =
+document.getElementById("area").value;
+
+let property =
+document.getElementById("property").value;
+
+let painting =
+document.getElementById("painting").value;
+
+let rooms =
+document.getElementById("rooms").value;
+
+let message =
+document.getElementById("message").value;
+
+
+let text =
+"Hello Pink City Colour Paint,%0A%0A" +
+
+"Name: " + name + "%0A" +
+
+"Mobile: " + mobile + "%0A" +
+
+"Area: " + area + "%0A" +
+
+"Property: " + property + "%0A" +
+
+"Painting: " + painting + "%0A" +
+
+"Rooms: " + rooms + "%0A" +
+
+"Requirement: " + message + "%0A%0A" +
+
+"Mujhe free painting quotation chahiye.";
+
+
+window.open(
+"https://wa.me/917790889067?text=" +
+encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
